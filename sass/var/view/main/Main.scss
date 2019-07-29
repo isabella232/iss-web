@@ -1,0 +1,90 @@
+// COLOR PALETTE
+
+$orbit-dark-background: dynamic(#3e4752);
+$orbit-light-background: dynamic(#ececec);
+$orbit-tile-background: dynamic(#ffffff);
+
+$orbit-blue-color: dynamic(#5678A9);
+$orbit-orange-color: rgb(255, 102, 0);
+$orbit-light-orange-color: dynamic(saturate(lighten($orbit-orange-color, 53%), 70%));
+$orbit-light-blue-color: dynamic(saturate(lighten($orbit-blue-color, 53%), 70%));
+
+$orbit-font-light-color: dynamic(#a0a7b8);
+$orbit-font-color: dynamic(#878ea2);
+$orbit-font-dark-color: dynamic($orbit-dark-background);
+
+$orbit-font-family: dynamic(Arial, sans-serif);
+
+$orbit-font-size-small-content: dynamic(10px);
+$orbit-font-size-content: dynamic(12px);
+$orbit-font-size-small-title: dynamic(15px);
+$orbit-font-size-medium-title: dynamic(18px);
+$orbit-font-size-large-title: dynamic(20px);
+$orbit-font-size-xlarge-title: dynamic(28px);
+
+$orbit-font-regular: dynamic(400);
+$orbit-font-semibold: dynamic(500);
+$orbit-font-bold: dynamic(800);
+
+// GENERAL APP STYLE
+
+$enable-font-icons: true;
+$base-color: dynamic($orbit-blue-color);
+$color: dynamic($orbit-font-dark-color);
+$font-family: dynamic($orbit-font-family);
+$body-background-color: dynamic($orbit-light-background);
+
+// PANEL
+
+$panel-body-color: dynamic($orbit-font-dark-color);
+$panel-body-background-color: dynamic($orbit-light-background);
+
+// TOOLBAR
+
+$toolbar-background-color: dynamic($orbit-light-background);
+
+// GRID
+
+$grid-cell-inner-padding: dynamic(2px);
+$grid-header-padding: dynamic(6px);
+$grid-grouped-header-padding: dynamic(6px);
+
+$grid-column-header-font-weight: dynamic($orbit-font-bold);
+$grid-row-cell-font-weight: dynamic($orbit-font-regular);
+
+$grid-row-cell-color: dynamic($orbit-font-color);
+$grid-column-header-color: dynamic($orbit-font-dark-color);
+
+$grid-grouped-header-border-width: dynamic(0);
+
+$grid-grouped-header-background-color: dynamic($orbit-light-orange-color);
+
+// BUTTON
+
+$button-small-border-radius: dynamic(3px);
+$button-small-font-size: dynamic($orbit-font-size-content);
+$button-small-font-weight: dynamic($orbit-font-bold);
+$button-default-border-color: dynamic($base-color);
+$button-default-background-color: dynamic($base-color);
+
+// MENU
+
+$menu-text-color: dynamic($orbit-font-dark-color);
+
+// BORDERS
+
+$light-grey-borders: dynamic($orbit-font-color);
+
+// DATEPICKER
+
+$datepicker-arrow-height: dynamic($orbit-font-size-medium-title);
+
+// TRIGGER
+
+$form-trigger-glyph-color: dynamic(grey);
+$form-refresh-trigger-glyph-color: dynamic($form-trigger-glyph-color);
+$form-refresh-trigger-glyph: dynamic($fa-var-refresh 14px $font-icon-font-family);
+$form-caret-right-trigger-glyph-color: dynamic($form-trigger-glyph-color);
+$form-caret-right-trigger-glyph: dynamic($fa-var-caret-right 16px $font-icon-font-family);
+$form-caret-left-trigger-glyph-color: dynamic($form-trigger-glyph-color);
+$form-caret-left-trigger-glyph: dynamic($fa-var-caret-left 16px $font-icon-font-family);

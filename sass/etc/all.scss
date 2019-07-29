@@ -1,0 +1,89 @@
+// OVERRIDES
+
+// BUTTON
+
+.#{$prefix}btn-text {
+    // text-transform: uppercase;
+}
+.#{$prefix}btn-inner {
+    padding-top: 1px !important;
+}
+
+// GRID
+
+.#{$prefix}grid-body {
+    text-transform: none;
+}
+
+.#{$prefix}column-header {
+    text-transform: uppercase;
+}
+
+.#{$prefix}grid-header-ct {
+    border-top: none !important;
+}
+
+.#{$prefix}grid-item-container {
+    border-top: none !important;
+}
+
+.#{$prefix}column-header-last .#{$prefix}column-header-trigger, .#{$prefix}grid-cell-last {
+    border-right: none !important;
+}
+
+.#{$prefix}grid-cell-inner {
+    color: #000000;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.#{$prefix}wrap-cell .#{$prefix}grid-cell-inner {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+// LIST
+
+.#{$prefix}boundlist-subitem {
+    line-height: 10px;
+    padding-bottom: 6px;
+    font-size: smaller;
+}
+
+// FIELD-TRIGGER
+
+.#{$prefix}form-item {
+    .#{$prefix}form-refresh-trigger {
+        @if $enable-font-icons and ($form-refresh-trigger-glyph != null) {
+            @include font-icon($form-refresh-trigger-glyph, $line-height: null);
+        } @else {
+            background-image: theme-background-image('grid/refresh');
+        }
+    }
+    .#{$prefix}form-caret-left-trigger {
+        @if $enable-font-icons and ($form-caret-left-trigger-glyph != null) {
+            @include font-icon($form-caret-left-trigger-glyph, $line-height: null);
+        } @else {
+            background-image: theme-background-image('grid/page-prev');
+        }
+    }
+    .#{$prefix}form-caret-right-trigger {
+        @if $enable-font-icons and ($form-caret-right-trigger-glyph != null) {
+            @include font-icon($form-caret-right-trigger-glyph, $line-height: null);
+        } @else {
+            background-image: theme-background-image('grid/page-next');
+        }
+    }
+    .#{$prefix}form-small-trigger {
+        width: 20px;
+    }
+}
+
+// DATE-PICKER
+
+.#{$prefix}datepicker-column-header {
+    background-color: #f5f5f5 !important;
+}
+
+.#{$prefix}datepicker-month .#{$prefix}btn-inner {
+    font-size: $orbit-font-size-small-title !important;
+}

@@ -1,0 +1,37 @@
+
+.orbit-file-search-status {
+    padding-top: 4px;
+}
+
+.#{$prefix}grid.line-wrap .#{$prefix}grid-cell-inner {
+    white-space: normal;
+    word-wrap: break-word !important;
+}
+
+.#{$prefix}grid.line-wrap.whitespace-wrap .#{$prefix}grid-cell-inner {
+    white-space: pre-wrap !important;
+}
+
+.#{$prefix}grid.whitespace-wrap .#{$prefix}grid-cell-inner {
+    white-space: pre;
+}
+
+.#{$prefix}grid.font-size-smaller .#{$prefix}grid-item {
+    font-size: $grid-row-cell-font-size - 4px;
+    line-height: $grid-row-cell-line-height - 4px;
+}
+
+.#{$prefix}grid.font-size-small .#{$prefix}grid-item {
+    font-size: $grid-row-cell-font-size - 2px;
+    line-height: $grid-row-cell-line-height - 4px;
+}
+
+.#{$prefix}grid.font-size-large .#{$prefix}grid-item {
+    font-size: $grid-row-cell-font-size + 2px;
+    line-height: $grid-row-cell-line-height + 4px;
+}
+
+.#{$prefix}grid.font-size-larger .#{$prefix}grid-item {
+    font-size: $grid-row-cell-font-size + 4px;
+    line-height: $grid-row-cell-line-height + 4px;
+}

@@ -1,0 +1,34 @@
+
+.report-grid {
+    overflow: visible;
+
+    .#{$prefix}panel-body {
+        border-top: none;
+    }
+
+    .#{$prefix}grid-header-ct {
+        border-bottom-width: 1px !important;
+    }
+
+    .#{$prefix}grid-item:first-child {
+        border-top: none !important;
+    }
+
+    .#{$prefix}grid-item:last-child {
+        border-bottom: none !important;
+    }
+
+    .#{$prefix}toolbar {
+        .#{$prefix}box-target > * {
+            margin-right: 19px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .#{$prefix}box-menu-after {
+            margin-right: 0;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+
+.stats {
+    width: 100%;
+    height: 100%;
+    background-color: $orbit-tile-background;
+
+    span {
+        border-right: 1px solid $orbit-light-background;
+        display: inline-block;
+        text-align: center;
+        padding: 30px 0;
+        height: 100%;
+        width: 25%;
+        white-space: nowrap;
+        overflow: hide;
+        text-transform: uppercase;
+        color: $orbit-font-light-color;
+        font-weight: $orbit-font-bold;
+        font-size: $orbit-font-size-small-content;
+
+        div {
+            font-size: $orbit-font-size-xlarge-title;
+            color: $orbit-font-color;
+            font-weight: $orbit-font-semibold;
+            padding-bottom: 7px;
+        }
+    }
+
+    span:last-child {
+        border-right: none;
+    }
+}
+
+// .stats-tiles {
+//     margin-bottom: 19px;
+// }
