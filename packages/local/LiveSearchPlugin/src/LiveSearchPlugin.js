@@ -255,90 +255,95 @@ Ext.define('Ext.ux.grid.plugin.LiveSearch', {
      * Finds all strings that matches the searched value in each grid cells.
      */
     find: function() {
-        var me            = this;
-        var count         = 0;
-        var grid          = this.getCmp();
-        var view          = grid.view;
-        var cellSelector  = view.cellSelector;
-        var innerSelector = view.innerSelector;
-        var columns       = grid.visibleColumnManager.getColumns();
-
-        this.reset();
+        var me    = this;
+        var count = 0;
 
         if (this.disabled)
             return;
 
+        this.reset();
+
         this.publishState('statusText', me.searchRegExp ? me.defaultStatusText : null);
 
-        if (this.searchRegExp === null)
+        if (this.searchRegExp === null) {
+            this.publishState('statusText', null);
             return;
+        }
 
-        view.rowValues.view = view;
+        this.forEachGrid(function(grid) {
+            var view          = grid.getView();
+            var cellSelector  = view.getCellSelector();
+            var innerSelector = view.innerSelector;
+            var columns       = grid.getVisibleColumns();
 
-        grid.store.each(function(record, rid) {
-            var node = view.getNode(record);
+            view.rowValues.view = view;
 
-            if (node) {
-                node = Ext.fly(node);
-            }
-
-            columns.forEach(function(column, cid) {
-                var cell, cellHTML, matches, seen, out = [];
-
-                if (column.liveSearch === false)
-                    return;
+            grid.getStore().each(function(record, rid) {
+                var node = view.getNode(record);
 
                 if (node) {
-                    cell     = node.down(column.getCellInnerSelector(), true);
-                    cellHTML = cell ? cell.innerHTML : null;
-                } else {
-                    view.renderCell(column, record, rid, rid, cid, out);
-                    cellHTML = out.join('');
+                    node = Ext.fly(node);
                 }
 
-                if (!cellHTML) return;
+                columns.forEach(function(column, cid) {
+                    var cell, cellHTML, matches, seen, out = [];
 
-                cellHTML = cellHTML.replace(me.tagsRe, me.tagsProtect);
+                    if (column.liveSearch === false)
+                        return;
 
-                if (cell) {
-                    matches = cellHTML.match(me.tagsRe);
-                }
-
-                // populate indexes array and replace wrap matched string
-                cellHTML = cellHTML.replace(me.searchRegExp, function(m) {
-                    ++count;
-
-                    if (!seen) {
-                        me.matches.push({
-                            record: record,
-                            column: column
-                        });
-                        seen = true;
+                    if (node) {
+                        cell     = node.down(column.getCellInnerSelector(), true);
+                        cellHTML = cell ? cell.innerHTML : null;
+                    } else {
+                        view.renderCell(column, record, rid, rid, cid, out);
+                        cellHTML = out.join('');
                     }
 
-                    return cell ? '<span class="' + me.matchCls + '">' + m + '</span>' : null;
+                    if (!cellHTML) return;
+
+                    cellHTML = cellHTML.replace(me.tagsRe, me.tagsProtect);
+
+                    if (cell) {
+                        matches = cellHTML.match(me.tagsRe);
+                    }
+
+                    // populate indexes array and replace wrap matched string
+                    cellHTML = cellHTML.replace(me.searchRegExp, function(m) {
+                        ++count;
+
+                        if (!seen) {
+                            me.matches.push({
+                                record: record,
+                                column: column
+                            });
+                            seen = true;
+                        }
+
+                        return cell ? '<span class="' + me.matchCls + '">' + m + '</span>' : null;
+                    });
+
+                    if (!cell) return;
+
+                    // restore protected tags
+                    Ext.each(matches, function(match) {
+                        cellHTML = cellHTML.replace(me.tagsProtect, match);
+                    });
+
+                    // update cell html
+                    cell.innerHTML = cellHTML;
                 });
-
-                if (!cell) return;
-
-                // restore protected tags
-                Ext.each(matches, function(match) {
-                    cellHTML = cellHTML.replace(me.tagsProtect, match);
-                });
-
-                // update cell html
-                cell.innerHTML = cellHTML;
             });
+
+            view.rowValues.view = null;
         });
 
-        view.rowValues.view = null;
+        this.publishState('statusText', this.getStatusText(count));
 
         if (count) {
             this.currentIndex = 0;
-            this.publishState('statusText', Ext.String.format('{0} match{1} found.', count, count === 1 ? '' : 'es'));
         } else
         if (this.currentIndex === null) {
-            grid.getSelectionModel().deselectAll();
+            this.getCmp().getSelectionModel().deselectAll();
         }
      },
 
@@ -360,11 +365,10 @@ Ext.define('Ext.ux.grid.plugin.LiveSearch', {
      */
     highlight: function() {
         this.matches.forEach(function(item) {
-            var record = item.record;
-            var column = item.column;
-            var grid   = this.getCmp();
-            var view   = grid.view;
-            var node   = view.getNode(record);
+            var record   = item.record;
+            var column   = item.column;
+            var view     = column.getView();
+            var node     = view.getNode(record);
             var matchCls = this.matchCls;
             var matches, cellHTML;
 
@@ -441,6 +445,31 @@ Ext.define('Ext.ux.grid.plugin.LiveSearch', {
            .select(pos.record);
 
         this.highlight();
+    },
+
+    /**
+     * Invoke function for each grid.
+     * A locked grid contains 2 grids.
+     */
+    forEachGrid: function(fn, scope) {
+        var grid = this.getCmp();
+
+        if (grid.enableLocking) {
+            fn.call(scope || this, grid.lockedGrid);
+            fn.call(scope || this, grid.normalGrid);
+        } else {
+            fn.call(scope || this, grid);
+        };
+    },
+
+    /**
+     * Construct the status text depend on the match count.
+     */
+    getStatusText: function(count) {
+        if (count === 0)
+            return this.defaultStatusText;
+
+        return Ext.String.format('{0} match{1} found.', count, count === 1 ? '' : 'es');
     },
 
     /**
