@@ -1,21 +1,21 @@
-# Orbit Web
+# ISS Web
 
-This is the web frontend for _Orbit_.
+A web frontend for _[iss][iss]_
 
 ![FileViewer](resources/screenshots/FileViewer.png)
 
-It's backend counterpart can be found [here][iss].
+More screenshots can be found [here][screenshots]
 
 ## Features
 
-- Render report results generated with [ski][ski].
-- Load (remote) files and search, filter or export their content.
+- Render report results generated with [ski][ski]
+- Load files and search, filter or export their content
 
 ## Prerequisites
 
 - Install [Sencha Cmd](https://www.sencha.com/products/sencha-cmd) (^6.7.0)
 - Download [Sencha Ext JS](https://www.sencha.com/products/extjs) (^6.2.1) and
- extract Ext JS into a `"sencha-sdks"` folder in your home directory.
+ extract it into a `"sencha-sdks"` folder in your home directory
 
 ## Development
 
@@ -23,11 +23,15 @@ Clone the repo:
     
     $ git clone https://github.com/appplant/orbit-web.git && cd orbit-web/
 
-And then execute:
+Install the SDK:
 
     $ sencha app install ~/sencha-sdks
 
-To start and build the app during the development:
+Upgrade the Font Awesome icons:
+
+    $ (cd packages/local/font-awesome && sencha package build)
+
+And then execute:
 
     $ sencha app watch
 
@@ -52,6 +56,7 @@ Made with :heart: in Leipzig
 © 2016 [appPlant GmbH][appplant]
 
 [iss]: https://github.com/appplant/iss
+[screenshots]: https://github.com/appplant/orbit-web/tree/master/resources/screenshots
 [ski]: https://github.com/appplant/ski
 [license]: http://opensource.org/licenses/GPL-3.0
 [appplant]: www.appplant.de
