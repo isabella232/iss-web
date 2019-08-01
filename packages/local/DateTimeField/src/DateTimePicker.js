@@ -131,7 +131,7 @@ Ext.define('Ext.ux.DateTimePicker', {
                 type: 'hbox',
                 align: 'stretch'
             },
-            border: false,
+            border: true,
             defaults: {
                 flex: 1
             },
@@ -141,7 +141,7 @@ Ext.define('Ext.ux.DateTimePicker', {
             dockedItems: [{
                 xtype: 'toolbar',
                 dock: 'top',
-                // ui: 'footer',
+                ui: 'footer',
                 items: [
                     '->', {
                         xtype: 'label',

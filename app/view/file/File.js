@@ -350,7 +350,6 @@ Ext.define('Orbit.view.file.File', {
             },'-',{
                 text: 'Export as',
                 controller: 'fileexport',
-
                 menu: [{
                     text: 'Text',
                     iconCls: 'x-fa fa-file-alt',
@@ -366,7 +365,7 @@ Ext.define('Orbit.view.file.File', {
                     checked: false
                 }]
             }]
-        }],
+        }]
     },{
         xtype: 'label',
         dock: 'bottom',
