@@ -1,6 +1,4 @@
-# ISS Web
-
-A web frontend for _[iss][iss]_
+# Web Frontend for _[iss][iss]_
 
 ![FileViewer](resources/screenshots/FileViewer.png)
 
