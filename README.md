@@ -54,7 +54,7 @@ Made with :heart: in Leipzig
 © 2016 [appPlant GmbH][appplant]
 
 [iss]: https://github.com/appplant/iss
-[screenshots]: https://github.com/appplant/orbit-web/tree/master/resources/screenshots
+[screenshots]: resources/screenshots
 [ski]: https://github.com/appplant/ski
 [license]: http://opensource.org/licenses/GPL-3.0
 [appplant]: www.appplant.de
