@@ -37,7 +37,7 @@ Open your browser on http://localhost:1841
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/appplant/orbit-web.
+Bug reports and pull requests are welcome on GitHub at https://github.com/appplant/iss-web.
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
