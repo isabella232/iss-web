@@ -24,3 +24,8 @@ task :clean do
   rm_rf 'build'
   rm_rf '${ext.dir}'
 end
+
+desc 'Update packages'
+task :update do
+  # TODO
+end
