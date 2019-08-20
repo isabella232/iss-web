@@ -1,4 +1,4 @@
-# Web Frontend for _[iss][iss]_ <br> ![GitHub release](https://img.shields.io/github/v/release/appplant/orbit) [![Maintainability](https://api.codeclimate.com/v1/badges/34b2fb15b86008b67e84/maintainability)](https://codeclimate.com/github/appPlant/iss-web/maintainability)
+# Web Frontend for _[iss][iss]_ <br> ![GitHub tag](https://img.shields.io/github/v/tag/appplant/iss-web) [![Maintainability](https://api.codeclimate.com/v1/badges/34b2fb15b86008b67e84/maintainability)](https://codeclimate.com/github/appPlant/iss-web/maintainability)
 
 ![FileViewer](resources/screenshots/FileViewer.png)
 
