@@ -3,7 +3,7 @@
      * The application's namespace.
      */
     "name": "Orbit",
-    "version": "1.5.0.beta.1",
+    "version": "1.5.1-dev",
     /**
      * Comma-separated string with the paths of directories or files to search. Any classes
      * declared in these locations will be available in your class "requires" or in calls

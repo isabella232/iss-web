@@ -57,7 +57,7 @@ Ext.define('Orbit.view.main.Main', {
         tools: [{
             xtype: 'label',
             cls: 'orbit-footer',
-            text: 'Version 1.5.0'
+            text: 'Version 1.5.1-dev'
         },{
             xtype: 'label',
             cls: 'orbit-footer',
