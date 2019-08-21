@@ -4,3 +4,6 @@
 [submodule "packages/local/font-awesome"]
 	path = packages/local/font-awesome
 	url = https://github.com/vadimpopa/sencha-font-awesome-5.git
+[submodule "packages/local/ux-livesearch"]
+	path = packages/local/ux-livesearch
+	url = https://github.com/katzer/Ext.ux.grid.plugin.LiveSearch.git

@@ -31,7 +31,7 @@
      */
     "requires": [
         "DateTimeField",
-        "LiveSearchPlugin",
+        "ux-livesearch",
         "font-awesome",
         "font-ext"
     ],
