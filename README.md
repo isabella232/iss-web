@@ -19,7 +19,7 @@ More screenshots can be found [here][screenshots]
 
 Clone the repo:
     
-    $ git clone https://github.com/appplant/orbit-web.git && cd orbit-web/
+    $ git clone --recurse-submodules https://github.com/appplant/orbit-web.git && cd orbit-web/
 
 Install the SDK:
 
