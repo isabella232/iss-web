@@ -38,29 +38,37 @@ Ext.define('Ext.ux.grid.plugin.LiveSearch', {
      */
     matchCls: 'x-livesearch-match',
 
+    // <locale>
     /**
      * @cfg {String} matchCountFormat
      * How to format the match count in the status text.
      */
     matchCountFormat: '0,000',
+    // </locale>
 
+    // <locale>
     /**
      * @cfg {String} defaultStatusText
      * The default text when no matches were found.
      */
     defaultStatusText: 'Nothing Found',
+    // </locale>
 
+    // <locale>
     /**
      * @cfg {String} statusTextFormat
      * The plural format of the status text.
      */
     statusTextFormat: '{0} matches found.',
+    // </locale>
 
+    // <locale>
     /**
      * @cfg {String} statusTextSingularFormat
      * The singular format of the status text.
      */
     statusTextSingularFormat: '{0} match found.',
+    // </locale>
 
     /**
      * @private
