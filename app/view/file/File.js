@@ -278,28 +278,22 @@ Ext.define('Orbit.view.file.File', {
             reference: 'from',
             xtype: 'datetimefield',
             publishes: 'value',
-            width: 300,
             emptyText: 'From',
-            format: 'd.m.Y H:i:s.u',
-            altFormats: 'd.m.Y H:i:s|d.m.Y H:i|d.m.Y H',
-            minValue: new Date(0),
-            todayText: 'Now',
-            startDay: 1,
-            valuePublishEvent: ['select', 'blur', 'change'],
-            bind: { maxValue: '{to.value}' }
+            width: 300,
+
+            bind: {
+                maxValue: '{to.value}'
+            }
         },{
             reference: 'to',
             xtype: 'datetimefield',
             publishes: 'value',
-            width: 300,
             emptyText: 'To',
-            format: 'd.m.Y H:i:s.u',
-            altFormats: 'd.m.Y H:i:s|d.m.Y H:i|d.m.Y H',
-            minValue: new Date(0),
-            todayText: 'Now',
-            startDay: 1,
-            valuePublishEvent: ['select', 'blur', 'change'],
-            bind: { minValue: '{from.value}' }
+            width: 300,
+
+            bind: {
+                minValue: '{from.value}'
+            }
         },{
             xtype: 'button',
             iconCls: 'x-fa fa-bars',

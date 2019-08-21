@@ -15,7 +15,19 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-Ext.define('Orbit.overrides.Component', {
-    override: 'Ext.Component',
-    shadow: false
+Ext.define('Orbit.overrides.DateTimePicker', {
+    override: 'Ext.ux.DateTimePicker',
+
+    todayText: 'Now',
+    minuteText: 'Min',
+
+    minuteSliderConfig: {
+        padding: '0 10 10 6'
+    },
+
+    timePickerConfig: {
+        border: true,
+        width: 106,
+        bodyStyle: 'background-color:#fff'
+    }
 });

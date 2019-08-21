@@ -15,7 +15,17 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-Ext.define('Orbit.overrides.Component', {
-    override: 'Ext.Component',
-    shadow: false
+Ext.define('Orbit.overrides.DateTimeField', {
+    override: 'Ext.ux.DateTimeField',
+
+    format: 'd.m.Y H:i:s.u',
+    altFormats: 'd.m.Y H:i:s|d.m.Y H:i|d.m.Y H',
+
+    startDay: 1,
+
+    valuePublishEvent: [
+        'select',
+        'blur',
+        'change'
+    ]
 });
