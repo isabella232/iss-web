@@ -1,8 +1,8 @@
 # Web Frontend for _[iss][iss]_ <br> ![GitHub tag](https://img.shields.io/github/v/tag/appplant/iss-web) [![Maintainability](https://api.codeclimate.com/v1/badges/34b2fb15b86008b67e84/maintainability)](https://codeclimate.com/github/appPlant/iss-web/maintainability)
 
-![FileViewer](resources/screenshots/FileViewer.png)
+![FileViewer](screenshots/FileViewer.png)
 
-More screenshots can be found [here][screenshots]
+More screenshots can be found [here](screenshots)
 
 ## Features
 
@@ -54,7 +54,6 @@ Made with :heart: in Leipzig
 © 2016 [appPlant GmbH][appplant]
 
 [iss]: https://github.com/appplant/iss
-[screenshots]: resources/screenshots
 [ski]: https://github.com/appplant/ski
 [license]: http://opensource.org/licenses/GPL-3.0
 [appplant]: www.appplant.de
