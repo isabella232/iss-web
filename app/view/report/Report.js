@@ -19,6 +19,7 @@ Ext.define('Orbit.view.report.Report', {
     extend: 'Ext.grid.Panel',
 
     requires: [
+        'Ext.toolbar.Toolbar',
         'Ext.form.field.ComboBox',
         'Ext.grid.feature.Grouping',
         'Ext.grid.RowNumberer',
@@ -104,7 +105,6 @@ Ext.define('Orbit.view.report.Report', {
         width: 46,
         align: 'right',
         draggable: false,
-        draggable: false,
         menuDisabled: true
     },{
         flex: 1,
@@ -113,8 +113,7 @@ Ext.define('Orbit.view.report.Report', {
         menuDisabled: true,
     }],
 
-    dockedItems: [{
-        xtype: 'toolbar',
+    tbar: {
         margin: '0 0 19 0',
         padding: false,
 
@@ -204,5 +203,5 @@ Ext.define('Orbit.view.report.Report', {
                 '</tpl></ul>'
             ]
         }]
-    }]
+    }
 });

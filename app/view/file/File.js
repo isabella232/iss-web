@@ -21,6 +21,8 @@ Ext.define('Orbit.view.file.File', {
     requires: [
         'Ext.menu.Menu',
         'Ext.menu.CheckItem',
+        'Ext.toolbar.Toolbar',
+        'Ext.form.field.Text',
         'Ext.form.field.ComboBox',
         'Ext.form.field.Checkbox',
         'Ext.form.trigger.Trigger',
