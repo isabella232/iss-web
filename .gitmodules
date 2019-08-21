@@ -1,3 +1,6 @@
 [submodule "packages/local/DateTimeField"]
 	path = packages/local/DateTimeField
 	url = https://github.com/gportela85/DateTimeField.git
+[submodule "packages/local/font-awesome"]
+	path = packages/local/font-awesome
+	url = https://github.com/vadimpopa/sencha-font-awesome-5.git
