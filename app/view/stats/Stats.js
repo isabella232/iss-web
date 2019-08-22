@@ -19,7 +19,11 @@ Ext.define('Orbit.view.stats.Stats', {
     extend: 'Ext.Component',
 
     requires: [
-        'Ext.layout.container.VBox'
+        'Ext.layout.container.VBox',
+
+        'Orbit.view.stats.StatsController',
+        'Orbit.view.stats.StatsModel',
+        'Orbit.view.stats.ToolTip'
     ],
 
     alias: 'widget.orbit-stats',

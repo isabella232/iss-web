@@ -34,16 +34,6 @@ Ext.define('Orbit.view.stats.StatsModel', {
             autoLoad: true,
             storeId: 'stats',
 
-            proxy: {
-                url: '/stats',
-                type: 'ajax',
-                reader: 'array',
-                pageParam: '',
-                startParam: '',
-                limitParam: '',
-                noCache: false
-            },
-
             //<debug>
             data: [
                 ['server', 'Instances', 41],
@@ -52,6 +42,16 @@ Ext.define('Orbit.view.stats.StatsModel', {
                 ['tool', 'Tools', 85]
             ],
             //</debug>
+
+            proxy: {
+                url: '/stats',
+                type: 'ajax',
+                reader: 'array',
+                pageParam: '',
+                startParam: '',
+                limitParam: '',
+                noCache: false
+            }
         }
     }
 });

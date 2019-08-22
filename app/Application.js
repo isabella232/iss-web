@@ -27,20 +27,6 @@ Ext.define('Orbit.Application', {
 
     defaultToken: '!report',
 
-    views: [
-        'Orbit.view.main.Main'
-    ],
-
-    mainView: 'Orbit.view.main.Main',
-
-    launch: function() {
-        // Let's add a CSS class to body if flex box wrap is not implemented or broken
-        // http://flexboxlayouts.com/flexboxlayout_tricks.html
-        if (Ext.browser.is.Gecko && Ext.browser.version.major < 28) {
-            Ext.getBody().addCls('x-flex-wrap-broken');
-        }
-    },
-
     onAppUpdate: function() {
         Ext.create('Orbit.view.UpdateDialog').show();
     }

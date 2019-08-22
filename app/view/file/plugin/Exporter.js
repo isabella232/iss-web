@@ -101,9 +101,7 @@ Ext.define('Orbit.view.file.plugin.Exporter', {
     /**
      * Maps the export type to a content type.
      */
-    getContentType(type) {
-        var type = type || this.defaultType;
-
-        return Ext.String.format('text/{0};charset=utf-8', type);
+    getContentType: function(type) {
+        return Ext.String.format('text/{0};charset=utf-8', type || this.defaultType);
     }
 });

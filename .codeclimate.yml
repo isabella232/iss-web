@@ -25,7 +25,6 @@ version: "2"
 exclude_patterns:
   - ".sencha/"
   - "libs/"
-  - "packages/"
-  - "app.js"
+  - "ext/"
   - "bootstrap.js"
   - "**/*.rb"

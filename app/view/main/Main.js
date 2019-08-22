@@ -19,11 +19,14 @@ Ext.define('Orbit.view.main.Main', {
     extend: 'Ext.tab.Panel',
 
     requires: [
+        'Ext.plugin.Viewport',
         'Ext.form.Label',
-        'Orbit.view.*'
-    ],
+        'Ext.toolbar.Toolbar',
 
-    alias: 'widget.orbit-main',
+        'Orbit.view.file.File',
+        'Orbit.view.report.Report',
+        'Orbit.view.stats.Stats'
+    ],
 
     ui: 'navigation',
     cls: 'orbit-menu-navigation',
@@ -35,6 +38,8 @@ Ext.define('Orbit.view.main.Main', {
 
     controller: 'main',
     viewModel: 'main',
+
+    plugins: 'viewport',
 
     header: {
         iconCls: 'orbit-header-icon',

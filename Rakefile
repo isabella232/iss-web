@@ -16,7 +16,7 @@
 
 desc 'compile app'
 task :compile do
-  sh 'sencha build production'
+  sh 'sencha app build --clean production'
 end
 
 desc 'clean build artefacts'

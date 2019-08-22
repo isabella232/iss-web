@@ -83,7 +83,7 @@ Ext.define('Orbit.view.file.FileModel', {
                 pageParam: '',
                 startParam: '',
                 limitParam: '',
-                noCache: false,
+                noCache: false
             },
 
             //<debug>
@@ -143,7 +143,7 @@ Ext.define('Orbit.view.file.FileModel', {
                 property: 'timestamp',
                 value: '{from.value}',
                 operator: '>=',
-                disableOnEmpty: true,
+                disableOnEmpty: true
             },{
                 id: 'to',
                 property: 'timestamp',

@@ -43,7 +43,7 @@ Ext.define('Orbit.model.Result', {
                 name: 'valid',
                 type: 'boolean',
                 mapping: 4
-            }]
+            }];
         }
     },
 
@@ -63,10 +63,10 @@ Ext.define('Orbit.model.Result', {
         name: 'valid',
         type: 'boolean',
         mapping: 4
-    }],
+    }]
 
     //<debug>
-    fields: [
+    ,fields: [
         'job_id', 'report_id', 'planet_id', 'planet', 'valid', "gateway", "telhandlerkm", "leappeng", "telhandlergp", "legsysmon", "gw_cp", "gw_cp_motor", "gw_ipsl", "gw_ipsq", "gw_plc", "gw_ps1", "gw_ps2", "gw_pt", "gw_sap", "gw_tia", "gw_disp", "gw_export", "gw_ng4", "gw_vflex", "gw_sicalis", "gw_kisslr", "gw_zta_dyz", "gw_zta_dyz_ps", "gw_cp_guss", "gw_pdem", "gw_ps", "gw_lw6", "gw_ab", "mls_adaptor", "mls_config_adaptor", "showver", "os", "unix", "webapp", "AdminVersion", "AdminVersions", "DB", "LC2", "Oracle", "adm", "ipa_core", "mls", "mqs", "nedit", "qca", "qxx", "ftf", "km", "lfv", "km_configurator", "python", "ipa_tools", '_id'
     ]
     //</debug>

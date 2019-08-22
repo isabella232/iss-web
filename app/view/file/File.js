@@ -21,14 +21,22 @@ Ext.define('Orbit.view.file.File', {
     requires: [
         'Ext.menu.Menu',
         'Ext.menu.CheckItem',
+        'Ext.button.Button',
         'Ext.toolbar.Toolbar',
         'Ext.form.field.Text',
         'Ext.form.field.ComboBox',
         'Ext.form.field.Checkbox',
         'Ext.form.trigger.Trigger',
+
         'Ext.ux.DateTimeField',
         'Ext.ux.grid.plugin.LiveSearch',
-        'Orbit.view.file.plugin.Exporter'
+
+        'Orbit.view.file.plugin.Exporter',
+        'Orbit.view.file.FileController',
+        'Orbit.view.file.FileExportController',
+        'Orbit.view.file.FileReloadController',
+        'Orbit.view.file.FileSearchController',
+        'Orbit.view.file.FileModel',
     ],
 
     alias: 'widget.orbit-file',

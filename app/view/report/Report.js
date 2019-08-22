@@ -23,6 +23,10 @@ Ext.define('Orbit.view.report.Report', {
         'Ext.form.field.ComboBox',
         'Ext.grid.feature.Grouping',
         'Ext.grid.RowNumberer',
+
+        'Orbit.view.report.plugin.ReconfigurableColumns',
+        'Orbit.view.report.ReportController',
+        'Orbit.view.report.ReportModel'
     ],
 
     alias: 'widget.orbit-report',
@@ -112,7 +116,7 @@ Ext.define('Orbit.view.report.Report', {
         flex: 1,
         sortable: false,
         draggable: false,
-        menuDisabled: true,
+        menuDisabled: true
     }],
 
     tbar: {
