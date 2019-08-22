@@ -79,7 +79,9 @@ Ext.define('Orbit.view.report.Report', {
 
         defaultColumns: [{
             xtype: 'rownumberer',
-            text: '#'
+            text: '#',
+            align: 'right',
+            width: 46
         },{
             text: 'Planet',
             dataIndex: 'planet',
@@ -102,8 +104,8 @@ Ext.define('Orbit.view.report.Report', {
 
     columns: [{
         text: '#',
-        width: 46,
         align: 'right',
+        width: 46,
         draggable: false,
         menuDisabled: true
     },{

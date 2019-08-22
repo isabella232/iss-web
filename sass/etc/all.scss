@@ -2,9 +2,6 @@
 
 // BUTTON
 
-.#{$prefix}btn-text {
-    // text-transform: uppercase;
-}
 .#{$prefix}btn-inner {
     padding-top: 1px !important;
 }
@@ -29,6 +26,10 @@
 
 .#{$prefix}column-header-last .#{$prefix}column-header-trigger, .#{$prefix}grid-cell-last {
     border-right: none !important;
+}
+
+.#{$prefix}column-header-align-right .#{$prefix}column-header-text {
+    margin-right: 0px !important;
 }
 
 .#{$prefix}grid-cell-inner {
