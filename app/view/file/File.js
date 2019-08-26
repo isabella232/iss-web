@@ -262,12 +262,12 @@ Ext.define('Orbit.view.file.File', {
                     cls: Ext.baseCSSPrefix + 'form-caret-left-trigger',
                     extraCls: Ext.baseCSSPrefix + 'form-small-trigger',
                     tooltip: 'Backward',
-                    handler: 'gotoPrevious'
+                    handler: 'gotoPrevMatch'
                 },
                 next: {
                     cls: Ext.baseCSSPrefix + 'form-caret-right-trigger',
                     tooltip: 'Forward',
-                    handler: 'gotoNext'
+                    handler: 'gotoNextMatch'
                 }
             }
         },{

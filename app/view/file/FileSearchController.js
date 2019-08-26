@@ -23,14 +23,14 @@ Ext.define('Orbit.view.file.FileSearchController', {
     /**
      * Select previous row containing a match.
      */
-    gotoPrevious: function() {
+    gotoPrevMatch: function() {
         this.getGrid().gotoPrevMatch();
     },
 
     /**
      * Select next row containing a match.
      */
-    gotoNext: function() {
+    gotoNextMatch: function() {
         this.getGrid().gotoNextMatch();
     },
 
