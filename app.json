@@ -1,7 +1,7 @@
 {
     "name": "Orbit",
     "namespace": "Orbit",
-    "version": "1.5.1-dev",
+    "version": "1.5.1",
     "framework": "ext",
     "toolkit": "classic",
     "theme": "theme-crisp-touch",
