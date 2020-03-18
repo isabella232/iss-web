@@ -2,9 +2,18 @@
 
 A web frontend for _iss_.
 
+## 1.5.1
+
+Released at: 18.03.2020
+
+1. Small internal code refactorings.
+
 ## 1.5.0
 
-Released at: UNRELEASED
+Released at: 13.08.2019
+
+<details><summary>Releasenotes</summary>
+<p>
 
 1. New export function for saving the (selected) file in plain or CSV format.
 
@@ -24,7 +33,10 @@ Released at: UNRELEASED
 
 9. Disabled any shadow effects.
 
-[Full Changelog](https://github.com/appplant/iss-web/compare/dea2d5d06a0a9cd0840db94ff50c61ebe05c2a96...HEAD)
+</p>
+
+[Full Changelog](https://github.com/appplant/iss-web/compare/1.4.7...1.5.0)
+</details>
 
 ## 1.4.7
 
