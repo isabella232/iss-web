@@ -1,7 +1,7 @@
 {
     "name": "Orbit",
     "namespace": "Orbit",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "framework": "ext",
     "toolkit": "classic",
     "theme": "theme-crisp-touch",
@@ -286,6 +286,9 @@
             "appCache": {
                 "enable": true,
                 "path": "cache.appcache"
+            },
+            "js": {
+                "version": "ES6"
             }
         },
         "loader": {
