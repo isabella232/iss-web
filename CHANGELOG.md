@@ -2,11 +2,25 @@
 
 A web frontend for _iss_.
 
+## 1.5.2
+
+Released at: not yet released
+
+1. Upgrade to ExtJS 7.
+
 ## 1.5.1
 
 Released at: 18.03.2020
 
+<details><summary>Releasenotes</summary>
+<p>
+
 1. Small internal code refactorings.
+
+</p>
+
+[Full Changelog](https://github.com/appplant/iss-web/compare/1.5.0...1.5.1)
+</details>
 
 ## 1.5.0
 
