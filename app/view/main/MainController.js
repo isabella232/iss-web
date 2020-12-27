@@ -21,12 +21,12 @@ Ext.define('Orbit.view.main.MainController', {
     alias: 'controller.main',
 
     routes: {
-        '!:id': {
+        ':id': {
             action: 'onNavigate',
             before: 'beforeNavigate'
         },
 
-        '!:id/:state': {
+        ':id/:state': {
             action: 'onNavigateDeep',
             before: 'beforeNavigateDeep'
         }
@@ -78,10 +78,6 @@ Ext.define('Orbit.view.main.MainController', {
     },
 
     changeRoute: function (controller, route) {
-        if (route.substring(0, 1) !== '!') {
-            route = '!' + route;
-        }
-
         this.redirectTo(route);
     },
 

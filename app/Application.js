@@ -25,7 +25,7 @@ Ext.define('Orbit.Application', {
     name: 'Orbit',
     quickTips: true,
 
-    defaultToken: '!report',
+    defaultToken: 'report',
 
     onAppUpdate: function() {
         Ext.create('Orbit.view.UpdateDialog').show();

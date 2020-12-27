@@ -21,7 +21,7 @@ Ext.define('Orbit.view.file.FileController', {
     alias: 'controller.file',
 
     routes: {
-        '!lfv/:state': {
+        'lfv/:state': {
             before: 'onBeforeNavigate'
         }
     },
