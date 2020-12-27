@@ -22,6 +22,10 @@ Ext.define('Orbit.model.FileContent', {
         'Ext.data.identifier.Sequential'
     ],
 
+    uses: [
+        'Ext.Date'
+    ],
+
     idProperty: '_id',
     identifier: 'sequential',
 

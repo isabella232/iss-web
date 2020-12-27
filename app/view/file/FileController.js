@@ -67,7 +67,7 @@ Ext.define('Orbit.view.file.FileController', {
      * Cleanup and reset state.
      */
     onPlanetChanged: function(planet) {
-        this.clearStore('files');
+        // this.clearStore('files');
         this.clearStore('lines');
 
         if (!planet.data)

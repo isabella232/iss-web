@@ -8,6 +8,8 @@ Released at: not yet released
 
 1. Upgrade to ExtJS 7.
 
+2. Convert special chars to their HTML equivalents.
+
 ## 1.5.1
 
 Released at: 18.03.2020

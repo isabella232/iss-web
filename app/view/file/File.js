@@ -39,6 +39,10 @@ Ext.define('Orbit.view.file.File', {
         'Orbit.view.file.FileModel',
     ],
 
+    uses: [
+        'Ext.String'
+    ],
+
     alias: 'widget.orbit-file',
 
     config: {
@@ -89,7 +93,9 @@ Ext.define('Orbit.view.file.File', {
         flex: 1,
         sortable: false,
         hideable: false,
-        draggable: false
+        draggable: false,
+        producesHTML: false,
+        renderer: function(str) { return Ext.htmlEncode(str); }
     }],
 
     dockedItems: [{

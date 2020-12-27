@@ -18,6 +18,10 @@
 Ext.define('Orbit.model.Report', {
     extend: 'Orbit.model.Base',
 
+    uses: [
+        'Ext.Date'
+    ],
+
     fields: [{
         name: 'job_id'
     },{

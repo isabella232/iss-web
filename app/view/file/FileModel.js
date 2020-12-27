@@ -153,12 +153,8 @@ Ext.define('Orbit.view.file.FileModel', {
             },{
                 property: 'content',
                 value: '{isFilter.checked ? grid.searchRegExp : null}',
-                // operator: '/=',
-                disabled: '{!(isFilter.checked && grid.searchRegExp)}',
-
-                filterFn: function(rec) {
-                    return this.getValue().test(rec.get(this.getProperty()));
-                }
+                operator: '/=',
+                disabled: '{!(isFilter.checked && grid.searchRegExp)}'
             }]
         },
         cycles: {

@@ -72,7 +72,7 @@ Ext.define('Orbit.view.base.ViewController', {
         if (!doClick)
             return;
 
-        Ext.defer(combo.onTriggerClick, 1, combo);
+        combo.doQuery();
     },
 
     resetCombo: function(comboId) {
