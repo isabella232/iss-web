@@ -23,7 +23,7 @@ Released at: 18.03.2020
 
 </p>
 
-[Full Changelog](https://github.com/appplant/iss-web/compare/1.5.0...1.5.1)
+[Full Changelog](https://github.com/katzer/iss-web/compare/1.5.0...1.5.1)
 </details>
 
 ## 1.5.0
@@ -53,7 +53,7 @@ Released at: 13.08.2019
 
 </p>
 
-[Full Changelog](https://github.com/appplant/iss-web/compare/1.4.7...1.5.0)
+[Full Changelog](https://github.com/katzer/iss-web/compare/1.4.7...1.5.0)
 </details>
 
 ## 1.4.7
@@ -67,7 +67,7 @@ Unavailable
 
 </p>
 
-[Full Changelog](https://github.com/appplant/iss-web/compare/1.4.6...1.4.7)
+[Full Changelog](https://github.com/katzer/iss-web/compare/1.4.6...1.4.7)
 </details>
 
 ## 1.4.6
@@ -81,7 +81,7 @@ Unavailable
 
 </p>
 
-[Full Changelog](https://github.com/appplant/iss-web/compare/1.4.5...1.4.6)
+[Full Changelog](https://github.com/katzer/iss-web/compare/1.4.5...1.4.6)
 </details>
 
 ## 1.4.5
@@ -107,5 +107,5 @@ Released at: 26.06.2018
 
 </p>
 
-[Full Changelog](https://github.com/appplant/iss-web/compare/1.4.4...1.4.5)
+[Full Changelog](https://github.com/katzer/iss-web/compare/1.4.4...1.4.5)
 </details>

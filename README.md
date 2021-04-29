@@ -1,4 +1,4 @@
-# Web Frontend for _[iss][iss]_ <br> ![GitHub tag](https://img.shields.io/github/v/tag/appplant/iss-web) [![Maintainability](https://api.codeclimate.com/v1/badges/34b2fb15b86008b67e84/maintainability)](https://codeclimate.com/github/appPlant/iss-web/maintainability)
+# Web Frontend for _[iss][iss]_ <br> ![GitHub tag](https://img.shields.io/github/v/tag/katzer/iss-web) [![Maintainability](https://api.codeclimate.com/v1/badges/34b2fb15b86008b67e84/maintainability)](https://codeclimate.com/github/katzer/iss-web/maintainability)
 
 ![FileViewer](screenshots/FileViewer.png)
 
@@ -19,7 +19,7 @@ More screenshots can be found [here](screenshots)
 
 Clone the repo:
     
-    $ git clone --recurse-submodules https://github.com/appplant/orbit-web.git && cd orbit-web/
+    $ git clone --recurse-submodules https://github.com/katzer/orbit-web.git && cd orbit-web/
 
 Install the SDK:
 
@@ -37,7 +37,7 @@ Open your browser on http://localhost:1841
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/appplant/iss-web.
+Bug reports and pull requests are welcome on GitHub at https://github.com/katzer/iss-web.
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -53,7 +53,7 @@ Made with :heart: in Leipzig
 
 © 2016 [appPlant GmbH][appplant]
 
-[iss]: https://github.com/appplant/iss
-[ski]: https://github.com/appplant/ski
+[iss]: https://github.com/katzer/iss
+[ski]: https://github.com/katzer/ski
 [license]: http://opensource.org/licenses/GPL-3.0
 [appplant]: www.appplant.de
